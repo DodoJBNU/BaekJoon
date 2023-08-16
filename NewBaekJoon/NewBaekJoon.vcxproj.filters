@@ -11,9 +11,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="BaekJoon\Class2\1018.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="BaekJoon\Tier\Silver\11047.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -21,6 +18,12 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="BaekJoon\Class\Class2\1018.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekJoon\Tier\Bronze\2309.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekJoon\Tier\Silver\2178.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
