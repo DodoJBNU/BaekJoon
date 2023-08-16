@@ -3,7 +3,7 @@
 #include<algorithm>
 using namespace std;
 
-int CheckBoardMinimum(const vector<vector<char>> &InputBoard, int n, int m)
+int CheckBoardMinimum(const vector<vector<char>>& InputBoard, int n, int m)
 {
 	int i, j, u, v;
 	// 보드 세팅 
@@ -37,7 +37,7 @@ int CheckBoardMinimum(const vector<vector<char>> &InputBoard, int n, int m)
 	int minimum = 2501;
 
 
-	for (i = 0; i <= n-8; i++)
+	for (i = 0; i <= n - 8; i++)
 	{
 		for (j = 0; j <= m - 8; j++)
 		{
@@ -81,6 +81,6 @@ int main()
 	int min = CheckBoardMinimum(InputBoard, n, m);
 
 	cout << min;
-	
+
 	return 0;
 }
