@@ -32,5 +32,8 @@
     <ClCompile Include="BaekJoon\Tier\Gold\2109.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="BaekJoon\Tier\Bronze\2979.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
