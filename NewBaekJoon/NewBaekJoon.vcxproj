@@ -25,7 +25,9 @@
     <ClCompile Include="BaekJoon\Tier\Bronze\2309.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="BaekJoon\Tier\Bronze\2979.cpp" />
+    <ClCompile Include="BaekJoon\Tier\Bronze\2979.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="BaekJoon\Tier\Gold\15686.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -35,6 +37,7 @@
     <ClCompile Include="BaekJoon\Tier\Gold\2109.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="BaekJoon\Tier\Silver\1012.cpp" />
     <ClCompile Include="BaekJoon\Tier\Silver\11047.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
