@@ -71,6 +71,9 @@
     <ClCompile Include="BaekJoon\Tier\Silver\15650.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="BaekJoon\Tier\Silver\15654.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="BaekJoon\초기코드.txt" />
