@@ -17,7 +17,7 @@
     <ClCompile Include="BaekJoon\Tier\Gold\15686.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="BaekJoon\Class\Class2\1018.cpp">
+    <ClCompile Include="BaekJoon\Tier\Silver\1018.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="BaekJoon\Tier\Bronze\2309.cpp">
@@ -38,7 +38,7 @@
     <ClCompile Include="BaekJoon\Tier\Silver\1012.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="BaekJoon\Class\Class2\1181.cpp">
+    <ClCompile Include="BaekJoon\Tier\Silver\1181.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="BaekJoon\Tier\Gold\2589.cpp">
@@ -68,7 +68,7 @@
     <ClCompile Include="BaekJoon\Tier\Gold\1781.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="BaekJoon\test.cpp">
+    <ClCompile Include="BaekJoon\Tier\Silver\15650.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
