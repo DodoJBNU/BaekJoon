@@ -5,53 +5,27 @@
 using namespace std;
 
 int N, M;
-
-vector<int>last;
 vector<int>input;
 vector<int>res;
-vector<bool>visited;
 
 void dfs(int depth)
 {
 	if (depth == M)
 	{
-		bool flag = false;
-
-		if (!last.empty())
+		for (auto i : res)
 		{
-			for (int i = 0; i < last.size(); i++)
-			{
-				if (last[i] != res[i])
-				{
-					flag = true;
-					break;
-				}
-			}
+			cout << i << " ";
 		}
-		else flag = true;
-
-		if (flag)
-		{
-			last = res;
-			for (auto i : res)
-			{
-				cout << i << " ";
-			}
-			cout << "\n";
-		}
+		cout << "\n";
 	}
 	else
 	{
-		int temp = 0;
 		for (int i = 0; i < N; i++)
 		{
-			if (input[i]!=temp && !visited[i])
+			if (depth == 0 || res[depth - 1] <= input[i])
 			{
 				res[depth] = input[i];
-				temp = input[i];
-				visited[i] = true;
 				dfs(depth + 1);
-				visited[i] = false;
 			}
 		}
 	}
@@ -64,14 +38,12 @@ int main()
 
 	cin >> N >> M;
 	input.assign(N, 0);
-	res.assign(M, 0);	
-	visited.assign(N, false);
+	res.assign(M, 0);
 
 	for (int i = 0; i < N; i++)
 		cin >> input[i];
 
 	sort(input.begin(), input.end());
-	
 	dfs(0);
 	return 0;
 }
