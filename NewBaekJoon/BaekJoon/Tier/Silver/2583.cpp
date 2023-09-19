@@ -26,7 +26,7 @@ int main()
 	for (int i = 0; i < K; i++)
 		for (int j = 0; j < 4; j++)
 			cin >> input[i][j];
-	
+
 	for (int k = 0; k < K; k++)
 	{
 		for (int i = input[k][1]; i < input[k][3]; i++)
@@ -53,7 +53,7 @@ int main()
 				{
 					temp++;
 					tie(y, x) = q.front(); q.pop();
-					
+
 					for (int i = 0; i < 4; i++)
 					{
 						int n_y = y + dy[i];
@@ -64,7 +64,7 @@ int main()
 
 						q.push({ n_y, n_x });
 						sum[n_y][n_x] = sum[y][x] + 1;
-					}			
+					}
 				}
 				res.push_back(temp);
 			}
