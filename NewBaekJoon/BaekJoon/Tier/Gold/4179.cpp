@@ -18,7 +18,7 @@ void FireSetting()
 {
 	int size = F.size();
 	int y, x;
-	for(int i = 0; i< size; i++)
+	for (int i = 0; i < size; i++)
 	{
 		tie(y, x) = F.front(); F.pop();
 		for (int i = 0; i < 4; i++)
@@ -51,8 +51,8 @@ int main()
 				q.push({ i,j });
 				sum[i][j] = 1;
 			}
-			else if (map[i][j] == 'F') 
-				F.push({ i,j });	
+			else if (map[i][j] == 'F')
+				F.push({ i,j });
 		}
 	}
 
@@ -84,12 +84,12 @@ int main()
 				if (map[ny][nx] == '#' || map[ny][nx] == 'F' || sum[ny][nx]) continue;
 				q.push({ ny,nx });
 				sum[ny][nx] = sum[y][x] + 1;
-			}	
+			}
 		}
 		if (flag) break;
 	}
 
 	if (!flag) cout << "IMPOSSIBLE";
 	else cout << sum[y][x];
-	
+
 }
