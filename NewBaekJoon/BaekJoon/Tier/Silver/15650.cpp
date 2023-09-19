@@ -5,23 +5,31 @@
 using namespace std;
 
 int N, M;
+vector<int>input;
+vector<bool>visited;
 
-void combi(int start, vector<int>b)
+void dfs(int depth, int start)
 {
-	if (b.size() == M)
+	if (depth == M)
 	{
-		for (auto k : b)
+		for (auto i : input)
 		{
-			cout << k << " ";
+			cout << i << " ";
 		}
 		cout << "\n";
-		return;
 	}
-	for (int i = start+1; i <= N; i++)
+	else
 	{
-		b.push_back(i);
-		combi(i, b);
-		b.pop_back();
+		for (int i = start; i <= N; i++)
+		{
+			if (!visited[i])
+			{
+				visited[i] = true;
+				input[depth] = i;
+				dfs(depth + 1, i+1);
+				visited[i] = false;
+			}
+		}
 	}
 }
 int main()
@@ -31,7 +39,10 @@ int main()
 	cout.tie(NULL);
 
 	cin >> N >> M;
-	vector<int>b;
-	combi(0, b);
+
+	input.assign(M, 0);
+	visited.assign(N + 1, false);
+
+	dfs(0, 1);
 	return 0;
 }
